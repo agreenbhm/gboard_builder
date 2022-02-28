@@ -15,6 +15,11 @@ gboard_builder.py [-h] --keystore KEYSTORE --keyAlias KEYALIAS --keystorePasswor
 
 All arguments are required (except for skipCleanup, which if set will not delete temporary files).
 
+### Notes ###
+- The resulting APK has the same name as the official Gboard app (com.google.android.inputmethod.latin) and that is unable to be changed.
+- As a result, you need to uninstall the original Gboard app from your device.
+- If Gboard comes as a system app you may not be able to use this.  Look into uninstalling apps via ADB for your user account if you are unable to remove Gboard normally (really just hides the app).
+
 ### How It Works ###
 
 - APK is copied to local directory
